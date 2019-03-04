@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <DHT.h>
 
 #include <ESP8266WiFi.h>          //https://github.com/esp8266/Arduino
