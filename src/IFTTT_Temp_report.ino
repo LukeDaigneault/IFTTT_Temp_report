@@ -67,14 +67,14 @@ void loop() { // Wait a few seconds between measurements.
   // Compute heat index in Celsius (isFahreheit = false)
   float hic = dht.computeHeatIndex(t, h, false);
   char buffer[10];
-  Serial.print(F("Humidity: "));
-  Serial.print(h);
-  Serial.print(F("%  Temperature: "));
-  Serial.print(t);
-  Serial.print(F("°C "));
-  Serial.print(F("Heat index: "));
-  Serial.print(hic);
-  Serial.println(F("°C "));
+  //Serial.print(F("Humidity: "));
+  //Serial.print(h);
+  //Serial.print(F("%  Temperature: "));
+  //Serial.print(t);
+  //Serial.print(F("°C "));
+  //Serial.print(F("Heat index: "));
+  //Serial.print(hic);
+  //Serial.println(F("°C "));
 
   wh.trigger(dtostrf(t, 2, 2, buffer), dtostrf(h, 2, 2, buffer), dtostrf(hic, 2, 2, buffer));
 
